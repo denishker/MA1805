@@ -1,0 +1,24 @@
+let i = 0;
+let words = ['arrays', 'are', 'useful', 'lists'];
+let nums = [1, 55, 66, 88];
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+  background(200);
+  textSize(50);
+  textAlign(CENTER);
+  
+  text(words[i], nums[1] + 150, 200);
+  
+  text(nums[i], nums[1] + 150, 260);
+}
+
+function mouseClicked() {
+  i++;
+  if (i >= words.length) {
+    i = 0; 
+  }
+}
